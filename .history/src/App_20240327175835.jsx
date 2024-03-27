@@ -1,10 +1,10 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import Layout from "./Pages/Layout";
 import Home from "./Pages/Home";
 import Shop from "./Pages/Shop";
 import About from "./Pages/About";
-import jsonData from "./logements.js";
+import jsonData from "./logements.json";
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/about" element={<About />} />
-          <Route path="/layout" element={<Layout />} />
         </Routes>
       </Layout>
       <h1>Hello</h1>
