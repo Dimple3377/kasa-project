@@ -1,0 +1,38 @@
+.shop-page {
+  .banner {
+    // Appliquer les styles pour la bannière
+  }
+
+  .property-details {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; // Assurez-vous que la largeur ne dépasse pas celle du contenu
+
+    h2 {
+      // Styles pour le titre de la propriété
+    }
+
+    .property-tags {
+      // Styles pour les tags
+      .tag {
+        // Styles pour chaque tag
+      }
+    }
+
+    .property-rating {
+      // Styles pour les étoiles de notation
+    }
+
+    .property-description,
+    .property-equipements {
+      // Styles pour la description et les équipements
+      h3 {
+        // Styles pour les sous-titres
+      }
+      p,
+      ul {
+        // Styles pour les paragraphes et listes
+      }
+    }
+  }
+}

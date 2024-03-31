@@ -1,0 +1,32 @@
+// Home.scss
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    width: 100%;
+    height: auto; // Assurez-vous que le ratio de l'image est conservé
+    margin-bottom: 2rem; // Espacement entre la bannière et les cartes
+
+    img {
+      width: 100%;
+      height: auto; // Pour une image responsive
+    }
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 80%; // ou une largeur spécifique selon votre design
+    margin: 0 auto; // Centrer le conteneur si moins de 100% de largeur
+  }
+
+  .footer {
+    margin-top: auto; // Assurez-vous que le footer est toujours en bas de la page
+  }
+}
+
+// Vous devrez peut-être ajuster le sélecteur de classe selon le nom que vous avez donné dans votre JSX.

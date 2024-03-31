@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 300px; // Exemple de hauteur
+  color: white;
+  background-size: cover;
+  background-position: center;
+
+  // Ajout de styles pour le logo
+  .banner-logo {
+    position: absolute;
+    left: 20px; // Positionnez le logo à gauche
+    top: 20px; // Positionnez le logo en haut
+    width: 100px; // Taille du logo
+    height: auto;
+  }
+
+  h1 {
+    z-index: 1;
+  }
+}

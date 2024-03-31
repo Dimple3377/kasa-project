@@ -1,0 +1,36 @@
+// Slideshow.scss
+.slideshow {
+  position: relative;
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .right-arrow {
+    right: 10px;
+  }
+  .left-arrow {
+    left: 10px;
+  }
+  .slide-container {
+    position: relative;
+    img {
+      width: 100%;
+      display: block;
+    }
+    .slide-number {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 5px;
+    }
+  }
+}

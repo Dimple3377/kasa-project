@@ -1,0 +1,24 @@
+.collapse {
+  .collapse-toggle {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+
+    .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.open {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+}

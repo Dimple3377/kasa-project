@@ -1,0 +1,19 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); // Trois colonnes avec des tailles égales
+  grid-gap: 1rem; // Espace entre les cartes
+  margin: 1rem; // Ajustez selon vos besoins
+  // Utilisez des media queries pour ajuster la mise en page pour les écrans plus petits si nécessaire
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); // Deux colonnes pour les écrans plus petits
+  }
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr; // Une seule colonne pour les écrans très petits
+  }
+}

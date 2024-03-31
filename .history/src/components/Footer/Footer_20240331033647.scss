@@ -1,0 +1,23 @@
+body,
+html {
+  height: 100%; // Assurez-vous que le html et le body aient une hauteur de 100%
+  margin: 0; // Réinitialiser les marges
+  display: flex;
+  flex-direction: column; // La direction de la colonne permet de structurer le contenu de haut en bas
+}
+
+.content {
+  flex: 1; // Flex 1 permet au contenu de s'étendre pour remplir l'espace disponible, poussant le footer vers le bas
+  // Placez le contenu principal ici. Exemple:
+  // .main-content {
+  //   padding: 20px;
+  // }
+}
+
+footer {
+  background-color: #ff6060; // Couleur de fond du footer
+  color: white; // Couleur du texte
+  text-align: center; // Centrer le texte
+  padding: 1rem; // Ajoutez un rembourrage autour du contenu
+  width: 100%; // S'étend sur toute la largeur de la page
+}

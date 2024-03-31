@@ -1,0 +1,66 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(
+    300px,
+    auto
+  ); // Hauteur minimale de chaque carte, mais elle peut s'agrandir si nécessaire
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1440px;
+  margin: 2rem auto;
+
+  .card {
+    background-color: #ff6060;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden; // Empêche le débordement de contenu hors de la carte
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .card-info {
+      padding: 1rem;
+      h2 {
+        margin-bottom: 0.5rem;
+        white-space: nowrap; // Empêche le texte de s'enrouler sur plusieurs lignes
+        overflow: hidden; // Cache tout contenu qui dépasse la largeur de l'élément
+        text-overflow: ellipsis; // Ajoute des ellipses à la fin si le texte dépasse
+      }
+
+      p {
+        margin: 0;
+        // Vous pouvez aussi limiter le nombre de lignes affichées
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  // Ajoutez vos media queries ici...
+
+  // Media queries pour la responsivité
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+}

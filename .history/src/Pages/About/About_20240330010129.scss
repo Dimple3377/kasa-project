@@ -1,0 +1,48 @@
+.about-page-body {
+  // Styles appliqués au body uniquement sur la page About
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+
+  // Styles pour le Collapse spécifique à la page About
+  .collapse {
+    // Styles de la barre de titre du collapse
+    .collapse-header {
+      background-color: #ff6060; // Couleur de fond des en-têtes de collapse
+      color: #fff; // Couleur du texte des en-têtes
+      padding: 1em; // Ajustez l'espacement intérieur
+      margin-bottom: 0.5em; // Espace entre les collapses
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+
+      &:hover {
+        background-color: darken(#ff6060, 10%); // Assombrir au survol
+      }
+
+      .collapse-icon {
+        float: right; // Icone à droite
+        transition: transform 0.3s ease; // Animation de la rotation de l'icône
+      }
+    }
+
+    // Contenu du Collapse
+    .collapse-body {
+      // Ces styles dépendront de si vous utilisez une animation ou non pour l'ouverture
+      transition: max-height 0.3s ease;
+      &.open {
+        max-height: 20em; // Ou la hauteur nécessaire
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.collapse {
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    // Ajoutez plus de styles ici selon votre design
+
+    .collapse-icon {
+      transition: transform 0.3s ease;
+      // Flèche pointe vers le bas quand le contenu est ouvert
+      &.closed {
+        transform: rotate(180deg); // Flèche pointe vers le haut initialement
+      }
+    }
+  }
+
+  .collapse-content {
+    // Styles pour votre contenu dépliable
+    transition: max-height 0.3s ease;
+  }
+}

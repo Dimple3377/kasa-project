@@ -1,0 +1,11 @@
+.Banner {
+  /* Assurez-vous que la bannière a une hauteur définie pour que le fond soit visible */
+  height: 300px; // Exemple de hauteur, ajustez selon vos besoins
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover; // Couvre tout l'espace disponible sans perdre les proportions
+  background-position: center; // Centre l'image de fond
+  color: white; // Pour le titre, si votre fond est sombre
+}

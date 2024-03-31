@@ -1,0 +1,49 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; // Augmentez l'écart pour plus d'espace entre les cartes
+  padding: 2rem; // Ajoutez du padding autour des cartes pour l'espacement avec les bords de la page
+  max-width: 1440px; // Définissez une largeur maximale pour le conteneur
+  margin: 2rem auto; // Centrer le conteneur sur la page avec un espacement supérieur et inférieur
+
+  .card {
+    background-color: #ff6060; // Couleur de fond des cartes pour correspondre à l'image
+    padding: 1rem; // Padding à l'intérieur des cartes
+    border-radius: 10px; // Bords arrondis pour les cartes
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Répartir l'espace verticalement entre les éléments de la carte
+
+    // Adaptation pour la taille des images et du texte à l'intérieur des cartes
+    img {
+      width: 100%; // Les images couvrent toute la largeur de la carte
+      height: auto; // Hauteur auto pour maintenir le ratio de l'image
+      border-radius: 10px 10px 0 0; // Arrondir seulement les coins supérieurs de l'image
+    }
+
+    .card-info {
+      padding: 1rem; // Espacement à l'intérieur de la zone d'info
+      h2,
+      p {
+        margin: 0.5rem 0; // Espacement vertical entre le titre et le paragraphe
+      }
+    }
+  }
+
+  // Media queries pour la responsivité
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem auto;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; // Une seule colonne pour les écrans très petits
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+}

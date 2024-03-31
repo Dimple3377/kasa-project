@@ -1,0 +1,14 @@
+footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000; // Mettez la couleur de fond que vous souhaitez pour votre footer
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+
+  p {
+    color: #fff; // Changez la couleur du texte si nécessaire
+    margin: 0; // Cela garantit qu'il n'y a pas d'espace supplémentaire autour du texte
+  }
+}

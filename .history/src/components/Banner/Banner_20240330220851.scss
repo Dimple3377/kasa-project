@@ -1,0 +1,32 @@
+/* Banner.scss */
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.banner.slideshow img {
+  width: 100%; /* Assurez-vous que l'image de la bannière s'adapte à la largeur */
+}
+
+.banner-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}

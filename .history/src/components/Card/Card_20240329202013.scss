@@ -1,0 +1,25 @@
+.card {
+  background: #ff5a5f; // La couleur rouge des cartes
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0; // Arrondit seulement les coins supérieurs
+  }
+
+  .card-info {
+    h2 {
+      margin-top: 0.5rem;
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+}

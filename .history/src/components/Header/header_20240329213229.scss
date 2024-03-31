@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .header-logo {
+    height: 50px; // ou la taille que vous souhaitez pour le logo
+    margin-right: 1rem; // espace entre le logo et la navigation
+  }
+
+  nav {
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0; // Retire le padding par défaut des listes
+
+      li {
+        margin-left: 1rem; // Espace entre les éléments de la liste
+
+        a {
+          text-decoration: none; // Optionnel : retire le soulignement des liens
+          color: #fff; // Mettez ici la couleur de votre texte
+          &:hover {
+            color: #ccc; // Changement de couleur au survol
+          }
+        }
+      }
+    }
+  }
+}

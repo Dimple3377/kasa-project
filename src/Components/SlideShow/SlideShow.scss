@@ -1,0 +1,45 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+
+  .slide-container {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff6060;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &.left-arrow {
+      left: 10px;
+    }
+
+    &.right-arrow {
+      right: 10px;
+    }
+  }
+
+  .slide-number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+}

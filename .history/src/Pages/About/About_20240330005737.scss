@@ -1,0 +1,22 @@
+.about-page-body {
+  // Styles appliqués au body uniquement sur la page About
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; // Couleur de fond, ajustez selon le design
+  font-family: "Open Sans", sans-serif; // Exemple de police
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column; // Organiser les éléments en colonne
+  min-height: 100vh; // La page About occupe au minimum toute la hauteur de la fenêtre
+  justify-content: flex-start; // Les éléments commencent depuis le haut
+  align-items: center; // Centrer les éléments horizontalement
+
+  .collapses {
+    width: 100%; // Les collapses prennent toute la largeur disponible
+    max-width: 1200px; // Limiter la largeur pour ne pas étirer le contenu sur les grands écrans
+    margin: auto; // Centrer le bloc des collapses
+    padding: 1em; // Espace autour du contenu interne
+  }
+}

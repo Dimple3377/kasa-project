@@ -1,0 +1,26 @@
+.banner {
+  height: 300px; // Exemple de hauteur
+  width: 100%; // Exemple de largeur
+  background-size: cover; // Assure que l'image couvre entièrement la div
+  background-position: center; // Centre l'image dans la div
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); // Ajoute un voile sombre pour améliorer la lisibilité
+  }
+  h1 {
+    position: relative; // Assure que le titre est au-dessus du voile sombre
+    z-index: 1;
+  }
+}

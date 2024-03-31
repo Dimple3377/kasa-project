@@ -1,0 +1,44 @@
+.collapse {
+  .collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ff6060;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken(#ff6060, 10%);
+    }
+  }
+
+  .collapse-title {
+    font-weight: bold;
+  }
+
+  .collapse-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .collapse-icon.open {
+    transform: rotate(-180deg);
+  }
+
+  .collapse-body {
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    &.open {
+      max-height: 500px; // Assume a max-height that can accommodate the content
+    }
+
+    &.open .collapse-content {
+      padding: 1rem;
+      background-color: white;
+      border-top: 1px solid #ff6060;
+    }
+  }
+}

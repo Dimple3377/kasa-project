@@ -1,0 +1,15 @@
+.about-page-body {
+  // Styles appliqués au body uniquement sur la page About
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  align-items: center;
+}

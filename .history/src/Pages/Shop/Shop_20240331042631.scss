@@ -1,0 +1,86 @@
+.shop-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .property-details {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    position: relative;
+
+    h2,
+    p {
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    .property-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+
+      .tag {
+        background-color: #ff6060;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .property-host-rating {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .property-host {
+        display: flex;
+        align-items: center;
+
+        .host-image {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-bottom: 10px;
+        }
+      }
+
+      .property-rating {
+        display: flex;
+        align-items: center;
+
+        .rating-star {
+          width: 25px;
+          height: 25px;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    // Nouveau style pour les collapses côte à côte
+    .collapses {
+      display: flex;
+      justify-content: space-between; // Utilisez space-around pour un espacement équilibré si nécessaire
+      gap: 20px; // Espacement entre les éléments collapse
+
+      .collapse {
+        flex: 1; // Permet à chaque collapse de prendre un espace égal
+        // Ajoutez des styles spécifiques pour collapse si nécessaire
+      }
+    }
+  }
+}

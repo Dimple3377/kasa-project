@@ -1,0 +1,55 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem auto; // Assurez-vous d'ajuster la marge selon le design
+  align-items: stretch; // Cela assure que toutes les cartes s'étendent verticalement pour remplir l'espace disponible
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // Répartit l'espace autour des éléments à l'intérieur de la carte
+    background-color: #ff6060;
+    border-radius: 10px;
+    overflow: hidden; // Empêche le contenu de déborder
+
+    // Définition de la hauteur minimale pour chaque carte ici
+    min-height: 300px; // Modifiez cette valeur en fonction de ce qui convient à votre design
+
+    .card-info {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1; // Prend tout l'espace disponible après que les autres éléments aient été affichés
+
+      h2,
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; // Limite à une ligne pour h2
+      }
+
+      p {
+        -webkit-line-clamp: 3; // Limite à trois lignes pour p
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 200px; // Vous pouvez fixer la hauteur des images pour être identique
+      object-fit: cover; // Cela permet de s'assurer que l'image couvre la zone désignée sans perdre ses proportions
+    }
+  }
+
+  // Media queries pour ajuster la grille sur différents écrans
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}

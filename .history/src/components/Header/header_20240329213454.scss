@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  .header-logo {
+    height: 50px; // ou la taille que vous souhaitez pour le logo
+    margin-right: 1rem; // espace entre le logo et la navigation
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-left: 2rem; // Espace entre les éléments de navigation
+
+      a {
+        color: #fff; // Couleur du texte des liens
+        text-decoration: none;
+
+        &:hover {
+          color: #aaa; // Couleur du texte au survol
+        }
+      }
+    }
+  }
+}

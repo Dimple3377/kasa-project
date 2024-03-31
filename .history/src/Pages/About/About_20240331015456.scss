@@ -1,0 +1,76 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    width: 100%;
+    height: 300px; // Hauteur de la bannière
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      color: white;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+      ); // Un fond semi-transparent pour le texte
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .collapses {
+    width: 80%;
+    max-width: 800px;
+    margin-top: -50px; // Pour chevaucher la bannière avec l'ombre portée
+
+    .collapse {
+      background-color: #ff6060;
+      color: white;
+      margin-bottom: 1em;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .collapse-header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1.5em;
+      }
+
+      .collapse-content {
+        padding: 20px;
+        background-color: white;
+        color: #333;
+        display: none; // Démarrez caché, sera affiché via JavaScript
+
+        &.active {
+          display: block; // Affichez le contenu lorsqu'il est actif
+        }
+      }
+
+      .collapse-icon {
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        // Ajouter la transition pour animer la rotation
+        transition: transform 0.3s ease;
+      }
+
+      .rotate {
+        // Flèche vers le bas quand active
+        transform: translateY(-50%) rotate(225deg);
+      }
+    }
+  }
+}
