@@ -1,0 +1,44 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; // Empêche la pseudo-classe ::after de déborder
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  @media (max-width: 768px) {
+    height: 150px;
+    margin-bottom: -14rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // Superposition sombre
+    z-index: 1;
+  }
+
+  h1 {
+    z-index: 2;
+    color: white;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: xxx-large;
+    text-align: center;
+    justify-content: center;
+    position: relative; /* S'assure que le contenu est au-dessus du pseudo-élément */
+    @media (max-width: 768px) {
+      font-size: xx-large;
+    }
+  }
+}

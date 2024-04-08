@@ -1,0 +1,32 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  .collapses {
+    width: 100%;
+    max-width: 1440px; // Correspond à la largeur de la bannière
+    margin: 20px auto; // Ajoute des marges en haut et en bas et centre les collapses
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; // Ajoute un espace entre chaque collapse
+
+    .collapse {
+      width: 80%; // Prend toute la largeur du conteneur .collapses
+      // Styles supplémentaires pour .collapse si nécessaire...
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  .banner {
+    margin-bottom: 2rem;
+
+    .footer {
+      position: absolute;
+    }
+  }
+}

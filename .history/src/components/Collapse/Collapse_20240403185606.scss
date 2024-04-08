@@ -1,0 +1,47 @@
+$collapse-background: #ff6060;
+$collapse-text-color: #ffffff;
+$collapse-content-background: #ffffff;
+
+.collapse {
+  & + & {
+    margin-top: 1em; // Espace entre les éléments Collapse
+  }
+
+  .collapse-header {
+    background-color: $collapse-background;
+    color: $collapse-text-color;
+    padding: 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+
+    // Ajustement pour l'icône Font Awesome ajoutée directement dans le JSX
+    .collapse-arrow {
+      // Les styles spécifiques à l'icône Font Awesome doivent être gérés ici si nécessaire
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      // Aucune rotation initiale ou couleur spécifiée ici car elle est gérée par le JSX
+    }
+  }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    background-color: $collapse-content-background;
+    border-radius: 0 0 10px 10px;
+    padding: 0 20px;
+
+    &.active {
+      padding: 20px;
+      max-height: 1000px; // Assurez-vous que c'est suffisant pour votre contenu
+    }
+  }
+}

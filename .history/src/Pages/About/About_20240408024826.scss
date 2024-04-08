@@ -1,0 +1,48 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    height: 25rem;
+
+    // Le logo et le paragraphe sont maintenant empilés et centrés verticalement
+  }
+
+  .collapses {
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .collapse {
+      width: 80%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  .banner {
+    margin-bottom: 2rem;
+  }
+  .banner::after {
+    box-shadow: none;
+
+    content: none;
+  }
+}

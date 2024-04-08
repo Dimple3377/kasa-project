@@ -1,0 +1,51 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner {
+    width: 100%;
+    height: 300px; // Hauteur de la bannière
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+    margin-bottom: 2rem;
+
+    .collapses {
+      width: 100%; // S'assurer que le conteneur des collapses prend toute la largeur
+      max-width: 1200px; // Ajoutez une largeur maximale si nécessaire
+      padding: 0 2em; // Ajoutez du padding pour ne pas que le contenu touche les bords
+      box-sizing: border-box; // Pour inclure le padding dans la largeur
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin: auto; // Centrer le conteneur si moins large que la page
+
+      @media (max-width: 768px) {
+        // Ajustements pour un affichage linéaire
+        flex-direction: column;
+        padding: 0 1em; // Réduire le padding sur les petits écrans
+      }
+    }
+
+    h1 {
+      color: white;
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+      ); // Un fond semi-transparent pour le texte
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      position: absolute;
+    }
+  }
+}

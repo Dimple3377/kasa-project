@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1440px;
+  margin-bottom: 1rem;
+
+  .header-logo {
+    margin-right: 1rem;
+  }
+
+  nav {
+    margin-left: auto;
+
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 25px;
+
+      li {
+        margin-left: 2rem;
+
+        a {
+          color: black;
+          text-decoration: none;
+
+          font-size: x-large;
+
+          &.active {
+            color: black;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; // Permet aux éléments du header de passer à la ligne sur les petits écrans
+
+    .header-logo,
+    nav {
+      flex-basis: 100%; // Permet au logo et à la navigation de prendre toute la largeur disponible
+      justify-content: center; // Centre le contenu de la navigation
+      text-align: center; // Centre le texte pour le logo et la navigation
+      margin-bottom: 0.5rem; // Espacement entre le logo et la navigation
+    }
+
+    nav ul {
+      justify-content: center; // Centre les liens dans la navigation
+      flex-wrap: wrap; // Permet aux liens de la navigation de passer à la ligne si nécessaire
+    }
+  }
+}

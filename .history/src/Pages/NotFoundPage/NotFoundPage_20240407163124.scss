@@ -1,0 +1,29 @@
+// NotFoundPage.scss
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+
+  h1 {
+    font-size: 5em;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: #ff5a5f;
+  }
+
+  a {
+    margin-top: 20px;
+    font-size: 1.2em;
+
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

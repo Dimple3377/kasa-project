@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  text-align: center;
+
+  .footer-logo {
+    max-width: 100px; // Exemple pour ajuster la taille du logo
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #fff;
+    margin: 0;
+  }
+}

@@ -1,0 +1,14 @@
+@import "./Components/Header/header.scss";
+/* Dans votre fichier CSS principal ou layout.css */
+.main-container {
+  min-height: 100vh; /* Hauteur minimale pour que le footer reste en bas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Espacer le contenu principal du footer */
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  /* autres styles de footer */
+}

@@ -1,0 +1,55 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+  .collapses {
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .collapse {
+      width: 80%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+  .banner {
+    margin-bottom: 2rem;
+  }
+  .banner::after {
+    box-shadow: none;
+
+    content: none;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center; // Centre le contenu horizontalement
+  align-items: center; // Centre le contenu verticalement (utile si le footer a une hauteur significative)
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+  .footer-logo {
+    max-width: 100px; // Ajustez selon la taille souhaitée pour le logo
+    // Pas besoin de margin-bottom ici si le logo est seul au centre
+  }
+
+  p {
+    color: #fff;
+    margin: 0;
+    // Si le paragraphe doit être visible, assurez-vous qu'il ne déplace pas le logo de son centrage
+    display: none; // Cacher le paragraphe si le logo doit être le seul élément centré
+  }
+}

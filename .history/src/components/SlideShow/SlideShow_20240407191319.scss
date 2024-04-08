@@ -1,0 +1,61 @@
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+
+  .slide-container {
+    width: 100%;
+    overflow: hidden;
+    @media (max-width: 768px) {
+      margin: 10px; // Ajoute une marge autour du conteneur de diaporama
+      width: calc(100% - 20px); // Ajuste la largeur pour compenser les marges
+    }
+    img {
+      width: 100%;
+      display: block;
+      height: auto; // Hauteur automatique pour maintenir le ratio d'aspect
+      max-height: 30rem; // Hauteur maximale pour les images
+    }
+
+    @media (max-width: 768px) {
+      margin: 10px; // Ajoute une marge autour du conteneur de diaporama
+      width: calc(100% - 20px); // Ajuste la largeur pour compenser les marges
+    }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+
+    &.left-arrow {
+      left: 10px;
+    }
+
+    &.right-arrow {
+      right: 10px;
+    }
+
+    // Redimensionnement des flèches pour les écrans plus petits
+    @media (max-width: 768px) {
+      width: 20px;
+      height: 20px;
+      font-size: 20px; // Ajuster si vous utilisez une icône de police pour les flèches
+    }
+  }
+  .slide-number {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+}

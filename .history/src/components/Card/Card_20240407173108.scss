@@ -1,0 +1,42 @@
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+  .card {
+    background: #ff5a5f;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+      width: 100%;
+
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+      height: 300px;
+    }
+
+    .card-info {
+      h2 {
+        margin-top: 0.5rem;
+        font-size: x-large;
+        // Ajuster le survol spécifiquement pour h2
+        &:hover,
+        &:focus {
+          background-color: transparent; // Assurez-vous que cela annule tout surlignage précédemment appliqué
+          color: inherit; // Garde la couleur du texte inchangée au survol
+        }
+      }
+      p {
+        margin-top: 0.5rem;
+      }
+      height: 85px;
+    }
+  }
+}

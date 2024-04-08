@@ -1,0 +1,75 @@
+.logements-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .property-details {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto; // centré avec une marge automatique
+    position: relative; // Vous pouvez ne pas avoir besoin de position relative
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #ff6060;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .property-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      .tag {
+        background-color: #ff6060;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .property-host {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; // Aligner à droite
+      margin-bottom: 20px; // Espace entre le host et le rating
+
+      .host-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .property-rating {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; // Aligner à droite
+      margin-bottom: 20px; // Espace entre le rating et les collapses
+
+      .rating-star {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+      }
+    }
+
+    .collapses-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px; // Ajustez l'écart selon vos besoins
+    }
+  }
+}
