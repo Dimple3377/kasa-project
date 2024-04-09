@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between; // Alignement du logo à gauche et de la navigation à droite
+  align-items: center;
+  padding: 2rem 0; // Padding ajusté
+  width: 100%; // Assure que le header occupe toute la largeur
+  max-width: 2000px;
+  margin: 0 auto; // Centre le header
+  position: relative; // S'assure que le header reste au-dessus de la bannière
+  z-index: 10; // Élévation au-dessus des autres éléments
+
+  .header-logo {
+    margin-right: auto; // Pousse la navigation vers la droite
+    max-width: 150px; // Ajuste la taille du logo
+    @media (max-width: 768px) {
+      margin: 0 10px 0 0; // Ajuste la marge pour les écrans plus petits
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 25px; // Espacement entre les liens
+
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: x-large;
+          @media (max-width: 768px) {
+            font-size: 18px; // Taille de police pour les petits écrans
+
+            &.active {
+              text-decoration: underline; // Souligne le lien actif
+            }
+          }
+        }
+      }
+    }
+  }
+}

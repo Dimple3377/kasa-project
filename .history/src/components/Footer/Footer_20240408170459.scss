@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; // Centre les éléments horizontalement dans le conteneur
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+
+  .footer-logo {
+    max-width: 100px; // Ajuste la taille du logo si nécessaire
+    margin-bottom: 1rem; // Espace entre le logo et le texte
+  }
+
+  p {
+    color: #fff;
+    margin: 0; // Supprime la marge par défaut des paragraphes
+  }
+}

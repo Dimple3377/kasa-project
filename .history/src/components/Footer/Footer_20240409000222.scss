@@ -1,0 +1,29 @@
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 23rem;
+
+  .footer-logo {
+    max-width: 125px;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    color: #fff;
+    margin: 0;
+  }
+}
+.home-footer {
+  height: 100px; // Exemple : hauteur spécifique pour la page d'accueil
+}

@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 23rem;
+
+  .footer-logo {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #fff;
+    margin: 0;
+  }
+}

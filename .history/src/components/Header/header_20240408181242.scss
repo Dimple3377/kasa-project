@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 15rem;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 100; // Assure que le header reste au-dessus de la bannière
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+  .header-logo {
+    margin-right: auto;
+    max-width: 150px;
+    @media (max-width: 768px) {
+      margin: 0 10px 0 10px;
+    }
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 10px;
+      padding: 0;
+      gap: 25px;
+
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          font-size: x-large;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
+
+          &:hover,
+          &.active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

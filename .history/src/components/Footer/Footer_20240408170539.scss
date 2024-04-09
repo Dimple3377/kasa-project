@@ -1,0 +1,25 @@
+.footer {
+  position: fixed; // ou 'relative' selon votre besoin
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  display: flex; // Ajoute le flexbox
+  justify-content: center; // Centre horizontalement
+  align-items: center; // Centre verticalement
+  flex-direction: column; // Organise les enfants en colonne
+
+  .footer-logo {
+    max-width: 100px; // Exemple pour ajuster la taille du logo
+    margin-bottom: 1rem; // Vous pouvez ajuster la marge si nécessaire
+  }
+
+  p {
+    color: #fff;
+    margin: 0; // Ajustez la marge au besoin
+  }
+}
