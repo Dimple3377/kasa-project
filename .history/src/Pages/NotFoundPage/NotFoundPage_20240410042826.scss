@@ -15,25 +15,24 @@
       margin: 0 auto;
     }
   }
+}
+h1 {
+  font-size: 5em;
+}
 
-  h1 {
-    font-size: 5em;
-  }
+p {
+  font-size: 2em;
+  color: #ff5a5f;
+  margin-top: 15rem;
+}
 
-  p {
-    font-size: 2em;
-    color: #ff5a5f;
-    margin-top: 15rem;
-  }
+a {
+  margin-top: 12rem;
+  font-size: 1.2em;
+  color: black;
+  text-decoration: none;
 
-  a {
-    margin-top: 12rem;
-    font-size: 1.2em;
-    color: black;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
   }
 }

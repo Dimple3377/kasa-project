@@ -15,16 +15,18 @@
   height: 350px;
 
   .footer-logo {
-    height: 50px;
+    height: 60px;
     margin-bottom: 2rem;
   }
 
   p {
     color: #fff;
     margin: 0;
-    font-size: x-large;
-    @media (max-width: 768px) {
-      font-size: medium;
-    }
   }
+}
+.home-footer {
+  height: 100px;
+}
+.about-footer {
+  height: 554px;
 }
