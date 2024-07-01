@@ -8,12 +8,18 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" exact activeClassName="active">
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" activeClassName="active">
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
               À propos
             </NavLink>
           </li>

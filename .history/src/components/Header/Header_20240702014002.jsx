@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoImage from "../../assets/images/logo.png";
 
 function Header() {
@@ -8,15 +8,15 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Accueil</Link>
+            <NavLink to="/" activeClassName="active">
+              Accueil
+            </NavLink>
           </li>
           <li>
-            <Link to="/shop">Boutique</Link>
+            <NavLink to="/about" activeClassName="active">
+              À propos
+            </NavLink>
           </li>
-          <li>
-            <Link to="/about">À propos</Link>
-          </li>
-          {/* Ajoutez d'autres liens de navigation ici si nécessaire */}
         </ul>
       </nav>
     </header>
